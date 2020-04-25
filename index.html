@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BUILDEX | Сервер Майнкрафт</title>
+	<meta name="title" content="BUILDEX | Сервер Майнкрафт" />
+	<meta name="description" content="Уникальный проект под названием BUILDEX, над которым работает профессиональная команда. На нашем сервере имеется 3 режима, такие как, BedWars, Skyblock и Выживание с бесплатным донатом." />
+	<link rel="image_src" href="https://gamepedia.cursecdn.com/minecraft_gamepedia/f/f0/Cake.png" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&display=swap" rel="stylesheet">
+	<meta content="" property="og:url" />
+	<meta content="img/header_background.png" property="og:image" />
+	<script src="https://kit.fontawesome.com/dc6f23ef75.js"></script>
+	<meta name="author" content="Valf Dev">
+	<link rel="shortcut icon" type="image/png" href="img/icon.png" />
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+		<link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+		<link href='css/style.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 200,
+        loop: true,
+		animationTime: 900,
+		
+      });
+		});
+		
+		
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+    jQuery("body").prepend('<div id="preloader"><div class="h"><div class="loader"></div></div></div>');
+    jQuery(document).ready(function() {
+        jQuery("#preloader").remove();
+    });
+</script>
+  <div class="wrapper">
+	<div id='menu' class='menu'>
+		<a href='#1'><div class="row">ГЛАВНАЯ <i class="fas fa-home"></i></div></a>
+		<a href='#2'><div class="row">О НАС <i class="fas fa-question"></i></div></a>
+		<a href='#3'><div class="row">МАГАЗИН <i class="fas fa-shopping-cart"></i></div></a>
+		<!--div class='row-name'><text>BUILD<b>EX</b></text></div-->
+	</div>
+	<script>
+		$(document).ready(function () {
+			var scroll_pos = 0;
+			$("#menu").scroll(function () {
+				scroll_pos = $(this).scrollTop();
+				if (scroll_pos > 210) {
+					$("#menu").css('background-color', '#1A1A1A');
+				} else {
+					$("#menu").css('background-color', 'red');
+				}
+				console.log(scroll_pos);
+			});
+		});
+	</script>
+	  <div class="main">
+	  
+      <section class="page1">
+        <div id="header" class='header'>
+			
+			<div class='middle'>
+				
+				<div class='center'>
+					<h1><b>BUILD</b>EX</h1>
+					<text>Сервер для строителей</text>
+				</div>
+				
+				<!--canvas style='position: absolute; width: 100vw;' id="canvas"></canvas>
+				<script src="js/rAF.js"></script>
+				<script src="js/demo-2.js"></script-->
+			</div>
+			
+		</div>
+		 
+      </section>
+	    
+	<section class="page2">
+		<div class='us'>
+			<div class='desc'>
+				<div class='float'>
+					<div class='center'>
+						
+						<h1><b>О НАС</b></h1></br>
+						<div class='txt'><div class='txtalign'><text>Уникальный сервер Minecraft, способный предоставить несколько игровых режимов, таких как: SkyBlock, SkyPVP, BuildBattle и гордость сервера - Creative. Отличительной особенностью на BuildEX является обширный набор строительных инструментов. В распоряжении игроков находятся огромные строительные участки, а также полный функционал плагина WorldEdit.
+В дополнение к известным и повсеместно используемым плагинам на сервере также используются самописные плагины, созданные командой разработчиков BuildEX. Данные плагины являются не просто гордостью проекта, а настоящей гарантией качественного и приятного игрового процесса.</text>
+						</div>
+						</div>
+						<!--h1><b>SERVER</b>STAT</h1></br-->
+						<!--h3><i class="fas fa-user-friends"></i>ОНЛАЙН: <b>6666</b></h3>
+						<h3><i class="fas fa-info-circle"></i>TPS: <b>20.0*</b></h3>
+						<h3><i class="fas fa-wifi"></i>PING(RUSSIA): <b>30MS</b></h3-->
+						<!--div class='stat-row'>
+							<i class="fas fa-users"></i>
+							<text>Постоянная поддержка для игроков</text>
+						</div>
+						<div class='stat-row'>
+							<i class="fas fa-microchip"></i>
+							<text>Мощное оборудование для комфортной игры</text>
+						</div>
+						<div class='stat-row'>
+							<i class="fas fa-ethernet"></i>
+							<text>Удобная локация для быстрого соеденения</text>
+						</div-->
+						
+						<!-- The text field -->
+						<input type="text" readonly value="192.168.0.1" id="myInput">
+
+						<!-- The button used to copy the text -->
+						<button id='btnc' onclick="myFunction()">КОПИРОВАТЬ</button>
+						
+						<script>
+							function myFunction() {
+							  /* Get the text field */
+							  var copyText = document.getElementById("myInput");
+
+							  /* Select the text field */
+							  copyText.select();
+
+							  /* Copy the text inside the text field */
+							  document.execCommand("copy");
+
+							  /* Alert the copied text */
+							  alert("В клиенте майнкрафт нажмите 'добавить сервер' и введите скопированный IP. Приятной игры!" + copyText.value);
+							}
+						</script>
+						<div class='buttons'>
+							<div class='center'>
+								<a style='color: white;' href='https://discord.gg/r2vHSX'><div class='button' style='background-color: #7289DA;'><text><i class="fab fa-discord"></i></text></div></a>
+								<a style='color: white;' href='https://vk.com/buildex_mc'><div class='button' style='background-color: #4680C2;'><text><i class="fab fa-vk"></i></text></div></a>
+								<a style='color: white;' href='#'><div class='button' style='background-color: #e53e3e;'><text><i class="fab fa-youtube"></i></text></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='vk'>
+				<div class='align'>
+					<div class='center'>
+						<script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
+						<!-- VK Widget -->
+						<div id="vk_groups"></div>
+						<script type="text/javascript">
+						VK.Widgets.Group("vk_groups", {mode: 3, color3: '329932'}, 194660219);
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    </section>
+	<section class="page3">
+	    <div class='donate'>
+			<div class='align'>
+				<form action="https://gamesdonate.com/pay/648d9fc2b3d1460ed7" method="POST">
+				<link rel="stylesheet" href="https://gamesdonate.com/assets/widget-css.css"/>
+				<h4 class="donate_title" style="font-size: 4vh; font-family: 'Montserrat', sans-serif; font-weight: 900; color: #20c2e5; text-align: center;">Магазин</h4>
+				<div class="donate_fgc">
+				<input type="text" class="donate_fc text-center" id="account" name="account" placeholder="Никнейм">
+				</div>
+				<div class="donate_fgc" id="donate_pex_block">
+				<select class="donate_fc" id="good" name="good"></select>
+				</div>
+				<div class="donate_fgc pt-10">
+				<button type="submit" class="donate_btn">Продолжить</button>
+				</div>
+				<script src="https://gamesdonate.com/assets/widget-php.php?token=648d9fc2b3d1460ed7"></script>
+				</form>
+				
+			</div>
+		</div>
+    </section>
+	<section class="page4" style='@media screen and (max-width: 980px) { display: none;}'>
+	    <div class='howplay'>
+			<div class='title'>
+				<h1>Как начать играть?</h1>
+				<h2 id='a-msg'>Сервер доступен только для пк.</br> Но не теряйте нас, постараемся перейти на другие платформы!</h2>
+			</div>
+			<div class='m'>
+				<div class='official'>
+					<img style='' src='img/licence.png'/></br>
+					<a href='https://www.minecraft.net/en-us/download/'><b style='color: #16b639;'>Скачать Minecraft</b></a>
+				</div>
+				<div class='tlauncher'>
+					<img style='' src='img/tlauncher.png'/></br>
+					<a href='https://tlauncher.org/'><b style='color:#43affc;'>Скачать TLauncher</b></a>
+				</div>
+			</div></br>
+			<!-- The text field -->
+						<input type="text" readonly value="192.168.0.1" id="myInput">
+
+						<!-- The button used to copy the text -->
+						<button id='btnc' onclick="myFunction()">КОПИРОВАТЬ</button>
+		</div>
+    </section>
+    </div>
+  </div>
+  
+</body>
+</html>
